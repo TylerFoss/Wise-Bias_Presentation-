@@ -27,7 +27,6 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
   markdown: require("../assets/markdown.png")
 };
@@ -37,7 +36,7 @@ preloader(images);
 const theme = createTheme({
   primary: "White",
   secondary: "#FF2D55",
-  tertiary: "FF2D55",
+  tertiary: "#FF2D55",
   quartenary: "#CECECE"
 }, {
   primary: "Montserrat",
@@ -57,19 +56,32 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={4} textColor="secondary">Cameron Bullock</Heading>
-          <Heading size={4} textColor="secondary">Tyler Foss</Heading>
-          <Heading size={4} textColor="secondary">Addison Fuller</Heading>
-          <Text size={9} textColor="secondary">The Team</Text>
+          <Text size={9} textColor="black">The Team</Text>
+          <br />
+          <Heading size={3} textColor="primary">Cameron Bullock</Heading>
+          <br />
+          <Heading size={3} textColor="primary">Tyler Foss</Heading>
+          <br />
+          <Heading size={3} textColor="primary">Addison Fuller</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Changing Your Bias One Click At A Time</Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+            <ListItem>LandingPage</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <List>
+            <ListItem>Sign In/Sign Up</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <List>
+            <ListItem>Dashboard</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <List>
+            <ListItem>Account</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
