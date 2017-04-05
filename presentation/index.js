@@ -34,6 +34,7 @@ const images = {
  signup: require("../assets/AppGifs/SignupClose.gif"),
  landing: require("../assets/AppGifs/LandingPage.png"),
  dashboard: require("../assets/AppGifs/Dashboard.gif"),
+ account: require("../assets/AppGifs/account.gif"),
  express: require("../assets/logos/express.png"),
  git: require("../assets/logos/Git-Logo.png"),
  github: require("../assets/logos/github.png"),
@@ -96,6 +97,7 @@ export default class Presentation extends React.Component {
        </Slide>
        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
          <Heading size={3} textColor="Black">Account</Heading>
+         <img style={{ width: "100%", marginTop: "50", }} src={images.account} />
        </Slide>
        <Slide transition={["fade"]} bgColor="White" textColor="tertiary">
          <Heading size={3} textColor="Black">Technologies</Heading>
