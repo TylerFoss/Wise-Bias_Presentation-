@@ -45,7 +45,11 @@ const images = {
  reactrouter: require("../assets/logos/react-router.png"),
  react: require("../assets/logos/React.png"),
  redux: require("../assets/logos/reduxlogo.png"),
- vanillajs: require("../assets/logos/VanillaJS.png")
+ vanillajs: require("../assets/logos/VanillaJS.png"),
+ addison: require("../assets/TeamImages/AddisonProfile.jpg"),
+ cameron: require("../assets/TeamImages/CameronProfile.jpg"),
+ tyler: require("../assets/TeamImages/TylerProfile.jpg"),
+ group: require("../assets/TeamImages/wisebiasGroup.jpg")
 };
 
 preloader(images);
@@ -69,7 +73,12 @@ export default class Presentation extends React.Component {
            <Heading size={6} textColor="primary">Cameron Bullock</Heading>
            <Heading style={{paddingLeft:"10", paddingRight:"10"}} size={6} textColor="primary">Tyler Foss</Heading>
            <Heading size={6} textColor="primary">Addison Fuller</Heading>
-         </Layout>
+        </Layout>
+        <Layout>
+          <img style={{margin: "auto", width: "400", height:"400", display:"inline", paddingLeft: "50", paddingRight: "50" }} src={images.cameron} />
+          <img style={{margin: "auto", width: "400", height:"400", display:"inline", paddingLeft: "50", paddingRight: "50" }} src={images.tyler} />
+          <img style={{margin: "auto", width: "400", height:"400", display:"inline", paddingLeft: "50", paddingRight: "50" }} src={images.addison} />
+        </Layout>
        </Slide>
        <Slide transition={["zoom"]} bgColor="primary">
          <Heading size={1} fit caps lineHeight={1} textColor="black">
